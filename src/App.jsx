@@ -7,6 +7,7 @@ import UserLogin from "./components/auth/UserLogin";
 import UserProfile from "./components/user/UserProfile";
 import AdminHome from "./components/admin/AdminHome";
 import AddProduct from "./components/admin/AddProduct";
+import EditProduct from "./components/admin/EditProduct";
 import AdminOrders from "./components/admin/AdminOrders";
 import AdminCustomers from "./components/admin/AdminCustomers";
 import AllProducts from "./components/admin/AllProducts";
@@ -83,6 +84,11 @@ const App = () => {
         <Route path="/admin/add-product" element={
           <ProtectedRoute requiredRole="admin">
             <AddProduct />
+          </ProtectedRoute>
+        } />
+        <Route path="/admin/edit-product/:id" element={
+          <ProtectedRoute requiredRole="admin">
+            <EditProduct />
           </ProtectedRoute>
         } />
         
