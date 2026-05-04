@@ -159,7 +159,7 @@ const AllProducts = () => {
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
                       <div
-                        className={`w-1.5 h-1.5 rounded-full ${product.stock > 0 ? "bg-emerald-500" : "bg-red-500"}`}
+                        className={`w-1.5 h-1.5 rounded-full ${product.stock > 0 ? "bg-emerald-500" : "bg-green-500"}`}
                       ></div>
                       <span
                         className={`text-xs font-bold uppercase tracking-tighter ${product.stock > 0 ? "text-emerald-500" : "text-green-500"}`}
